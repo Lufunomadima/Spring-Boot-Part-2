@@ -27,7 +27,7 @@ public class UserServiceImplTest {
         }
         @Test
         void remove() {
-            //no return type
+            //no return
         }
         @Test
         void getUser() {
@@ -35,6 +35,6 @@ public class UserServiceImplTest {
             user.setName(name);
             user.setSurname(surname);
             user.setId(1);
-            assertEquals(user.getId(), userService.getUser(1));  // same user id ==> same user
+            assertEquals(user.getId(), userService.getUser(1));
         }
 }
