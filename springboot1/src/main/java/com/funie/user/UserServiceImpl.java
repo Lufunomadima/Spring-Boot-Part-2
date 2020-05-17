@@ -34,6 +34,7 @@ public class UserServiceImpl implements UserService {
     public long getUser(long id) {
         LOGGER.info("Hello " + fakeRepo.findById(id).getName());
         fakeRepo.findById(id);
+
         return id;
     }
 }
