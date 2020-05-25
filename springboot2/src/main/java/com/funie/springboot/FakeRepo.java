@@ -1,5 +1,6 @@
-package com.funie.user;
+package com.funie.springboot;
 
+import com.funie.springboot.model.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Repository;
@@ -9,7 +10,7 @@ import java.util.ArrayList;
 import static java.lang.String.format;
 
     @Repository
-    public class FakeRepo implements FakeRepoInterface{
+    public class FakeRepo implements FakeRepoInterface {
         private static final Logger LOGGER = LogManager.getLogger(FakeRepo.class.getName());
 
         ArrayList<User> users = new ArrayList<>();

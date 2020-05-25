@@ -1,4 +1,4 @@
-package com.funie.user;
+package com.funie.springboot.model;
 
 public class User {
     private long id;

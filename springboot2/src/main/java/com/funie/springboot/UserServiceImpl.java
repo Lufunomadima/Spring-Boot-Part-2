@@ -1,4 +1,4 @@
-package com.funie.user;
+package com.funie.springboot;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -34,7 +34,15 @@ public class UserServiceImpl implements UserService {
     public long getUser(long id) {
         LOGGER.info("Hello " + fakeRepo.findById(id).getName());
         fakeRepo.findById(id);
-
+        try
+        {
+            System.out.println("Going to sleep for 5 Secs.. to simulate backend call.");
+            Thread.sleep(1000*5);
+        }
+        catch (InterruptedException e)
+        {
+            e.printStackTrace();
+        }
         return id;
     }
 }

@@ -1,4 +1,4 @@
-package com.funie.user;
+package com.funie.springboot;
 
 public interface UserService {
     String addUser(long id, String name, String surname);
